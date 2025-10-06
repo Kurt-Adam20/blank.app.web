@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Blank.app</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .legal-page {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+        .legal-page h1 {
+            color: var(--fg);
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+        .legal-page h2 {
+            color: var(--fg);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        .legal-page p {
+            margin-bottom: 15px;
+            color: var(--fg);
+        }
+        .legal-page ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        .legal-page li {
+            margin-bottom: 8px;
+            color: var(--fg);
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--fg);
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid color-mix(in oklab, var(--fg) 20%, transparent);
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+        .back-link:hover {
+            background: color-mix(in oklab, var(--fg) 10%, transparent);
+        }
+        .contact-info {
+            background: color-mix(in oklab, var(--bg) 85%, var(--fg) 15% / 6%);
+            border: 1px solid color-mix(in oklab, var(--fg) 20%, transparent);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .footer-links {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid color-mix(in oklab, var(--fg) 20%, transparent);
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .footer-links a {
+            color: var(--fg);
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid color-mix(in oklab, var(--fg) 20%, transparent);
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+        .footer-links a:hover {
+            background: color-mix(in oklab, var(--fg) 10%, transparent);
+        }
+    </style>
+</head>
+<body data-theme="light">
+    <div class="legal-page">
+        <a href="newtab.html" class="back-link">← Back to home</a>
+        
+        <h1>📝 Privacy Policy</h1>
+        <p><strong>Last updated: October 6, 2025</strong></p>
+        
+        <p><strong>Important:</strong> This privacy policy applies to the Chrome extension "Blank.app" developed by Blank.app Team.</p>
+        
+        <h2>1. Data Collection</h2>
+        <p>The Blank.app extension respects your privacy and does not collect any personal data:</p>
+        <ul>
+            <li>No user account is required to use the extension</li>
+            <li>No data is sent to our servers</li>
+            <li>No tracking or behavior analysis is performed</li>
+            <li>No advertising is displayed</li>
+        </ul>
+        
+        <h2>2. Storage</h2>
+        <p>Your notes and preferences are stored locally and may sync via your Google account:</p>
+        <ul>
+            <li>Uses Chrome storage APIs (<code>chrome.storage</code> and <code>chrome.storage.sync</code>)</li>
+            <li>Data remains on your devices and Google Sync; not shared with third parties</li>
+            <li><code>unlimitedStorage</code> may be requested to prevent truncation of longer notes</li>
+            <li>You can delete your data by uninstalling the extension or clearing Chrome storage</li>
+        </ul>
+
+        <h2>3. Optional Location</h2>
+        <p>If the user enables the Weather panel, the extension may use coarse device location or a user-provided location to fetch local weather. Location data is not persisted by the extension and is not used for profiling or advertising.</p>
+        
+        <h2>4. Required Permissions</h2>
+        <p>The extension requests the following permissions:</p>
+        <ul>
+            <li><code>chrome_url_overrides (newtab)</code>: Replace the New Tab page</li>
+            <li><code>storage</code> and <code>unlimitedStorage</code>: Save notes and preferences</li>
+            <li><code>contextMenus</code>: Provide an “Insert Emoji” option in editable fields</li>
+            <li><code>geolocation</code> (optional): Show local weather when the user requests it</li>
+            <li><em>Host permissions</em>: Limited to the domains listed under “External Services”</li>
+        </ul>
+        
+        <h2>5. Cookies and Tracking Technologies</h2>
+        <p>The Blank.app extension does not use:</p>
+        <ul>
+            <li>No tracking cookies</li>
+            <li>No fingerprinting technology</li>
+            <li>No tracking pixels</li>
+            <li>No analytics services</li>
+        </ul>
+
+        <h2>6. External Services (data only, no code execution)</h2>
+        <p>The extension fetches optional content from the following services to display in panels. Requests include no personal identifiers; responses are used only to render content locally. We do not load or execute remote scripts or Wasm.</p>
+        <ul>
+            <li><code>https://api.quotable.io/*</code> – quote of the day</li>
+            <li><code>https://uselessfacts.jsph.pl/*</code> – random facts</li>
+            <li><code>https://zenquotes.io/*</code> – motivational quotes</li>
+            <li><code>https://wttr.in/*</code> and <code>https://weather.uvw.workers.dev/*</code> – weather data</li>
+            <li><code>https://us-central1-uvweather-app.cloudfunctions.net/*</code> – weather endpoints</li>
+            <li><code>https://api.bigdatacloud.net/*</code> – reverse geocoding (city/country from coordinates)</li>
+        </ul>
+        
+        <h2>7. Data Sharing</h2>
+        <p>We do not share, sell, or rent your personal data to third parties. Your notes remain private and are only stored locally in your browser.</p>
+        
+        <h2>8. Security</h2>
+        <p>We are committed to protecting your data:</p>
+        <ul>
+            <li>Secure local storage in Chrome</li>
+            <li>No unauthorized data transmission</li>
+            <li>Compliance with Chrome security standards</li>
+            <li>No external data processing</li>
+        </ul>
+        
+        <h2>9. Your Rights</h2>
+        <p>In accordance with GDPR and privacy laws, you have the right to:</p>
+        <ul>
+            <li>Access your data (stored locally in Chrome)</li>
+            <li>Delete your data (extension uninstallation)</li>
+            <li>Revoke granted permissions</li>
+            <li>Contact us with any questions</li>
+        </ul>
+        
+        <h2>10. Changes to This Policy</h2>
+        <p>We reserve the right to modify this privacy policy. Any changes will be published on this page with a new update date.</p>
+        
+        <h2>11. Contact</h2>
+        <div class="contact-info">
+            <p>For any questions regarding this privacy policy, contact us:</p>
+            <p><strong>Email:</strong> krt.suleyman02@gmail.com</p>
+            <p><strong>Website:</strong> https://blank.app</p>
+        </div>
+        
+        <p><strong>© 2025 Blank.app Team. All rights reserved.</strong></p>
+        
+        <div class="footer-links">
+            <a href="terms.html">Terms of Service</a>
+            <a href="newtab.html">Home</a>
+        </div>
+    </div>
+</body>
+</html>
